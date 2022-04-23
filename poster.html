@@ -5,7 +5,7 @@
     <meta charset="utf-8">
     <meta content="width=device-width, initial-scale=1.0" name="viewport">
 
-    <title>远景展望</title>
+    <title>五年计划视角</title>
     <meta content="" name="description">
     <meta content="" name="keywords">
 
@@ -30,7 +30,7 @@
 
     <!-- Template Main CSS File -->
     <link href="./assets/css/style.css" rel="stylesheet">
-    <link rel="stylesheet" type="text/css" href="general.css">
+    <link rel="stylesheet" type="text/css" href="cwg.css">
 
     <!-- =======================================================
   * Template Name: Selecao - v4.1.0
@@ -41,7 +41,6 @@
 
 </head>
 
-
 <body>
 
     <!-- ======= Header ======= -->
@@ -49,16 +48,16 @@
         <div class="container d-flex align-items-center justify-content-between">
 
             <div class="logo">
-                <h1 style="color: rgb(248, 222, 222);">远景规划</h1>
+                <h1 style="color: rgb(248, 222, 222);">历史馆</h1>
                 <!-- Uncomment below if you prefer to use an image logo -->
                 <!-- <a href="web/main/index.html"><img src="assets/img/logo.png" alt="" class="img-fluid"></a>-->
             </div>
 
             <nav id="navbar" class="navbar">
                 <ul>
-                    <li><a class="nav-link scrollto" href="index_start.html">历史馆</a></li>
+                    <li><a class="nav-link scrollto active" href="index_start.html">历史馆</a></li>
                     <li><a class="nav-link scrollto" href="gallery.html">热门词云</a></li>
-                    <li><a class="nav-link scrollto active" href="general.html">远景规划</a></li>
+                    <li><a class="nav-link scrollto" href="general.html">远景规划</a></li>
                     <li><a class="nav-link scrollto" href="China.html">具体省份</a></li>
                     <li><a class="nav-link scrollto" href="contact.html">联系我们</a></li>
                     <li class="dropdown">
@@ -81,21 +80,26 @@
         <div id="heroCarousel" data-bs-interval="5000" class="container carousel carousel-fade" data-bs-ride="carousel">
 
             <!-- Slide 1 -->
-            <div class="carousel-item active">
+            <div class="carousel-item active" style="
+                        flex-grow:1;
+                        flex-direction: row ;
+                        justify-content:space-between;
+                        flex-basis:auto;
+                    ">
                 <div class="carousel-container">
-                    <div class="pa" id="step-container" style="overflow">
-                        <!-- onmouseover should be depart from onclick  -->
-                        <div class="step-circle" id="0" > 计划
-                        </div>
-                        <div class="step-circle" id="1">一五
-                        </div>
-                        <div class="step-circle" id="2" >二五</div>
-                        <div class="step-circle" id="3" >三五</div>
-                        <div class="step-circle" id="4">四五</div>
-                        <div class="step-circle" id="5" >五五</div>
-                       
-                       
+                    <div class="originTxt">
+                        <h2 class="animate__animated animate__fadeInDown"><span id="demo"></span></h2>
+                        <p class="animate__animated fanimate__adeInUp" id="txt"></br>
+                            </p>
+                    </div>
+
+                    <div id="echarts_adata">
             
+                      
+                    </div>
+
+                    <div class="fire">
+                       
                     </div>
 
                 </div>
@@ -131,38 +135,14 @@
     </section>
     <!-- End Hero -->
 
-    <main id="main" >
+    <main id="main" class="pap">
 
-        <section id="about" class="about">
-            <div class="container">
 
-                <div class="section-title" data-aos="zoom-out">
-                    <h2>远景规划</h2>
-                    <p>查看国家重点规划方向</p>
-                </div>
+        <div class="pa" id="step-container" style="overflow">
+            <!-- onmouseover should be depart from onclick  -->
+           
 
-                <div class="row content" data-aos="fade-up">
-                    <div class="col-lg-6">
-                        <p>
-                            本网页展示多个国家重点发展领域
-                            所有数据来源均为公开的官方网站 如有数据出入请及时联系我们，我们会马上更正相关数据
-                            数据来源<a href="http://www.gov.cn/xinwen/2021-03/13/content_5592681.htm">点击查看</a>
-                        </p>
-                        <p>
-                            <!-- <a href="#">《用户服务协议》</a> -->
-                        </p>
-                        <p>
-                            <!-- <a href="#">《隐私政策》</a> -->
-                        </p>
-                    </div>
-                    <div class="col-lg-6 pt-4 pt-lg-0">
-
-                    </div>
-                </div>
-
-            </div>
-        </section>
-     
+        </div>
 
     </main>
     <!-- End #main -->
@@ -180,17 +160,11 @@
 
     <!-- Template Main JS File -->
     <script src="./assets/js/main.js"></script>
-   
+
     <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/jquery/dist/jquery.min.js"></script>
     <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/echarts@5.3.2/dist/echarts.min.js"></script>
-    <script src="general.js"></script>
-
-    <!-- <script>
-        var httpRequest = new XMLHttpRequest();//第一步：建立所需的对象
-        httpRequest.open('GET', 'url', true);//第二步：打开连接  将请求参数写在url中  ps:"./Ptest.php?name=test&nameone=testone"
-        httpRequest.send();//第三步：发送请求  将请求参数写在URL中
-        
-    </script> -->
+    <!-- <script src="cwg.js"></script> -->
+    
 </body>
 
 </html>
